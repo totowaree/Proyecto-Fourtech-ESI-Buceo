@@ -1,0 +1,22 @@
+services:
+  app:
+    build: ./app
+    container_name: sistema_app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app/comprobantes:/var/www/html/comprobantes
+      - ./app/perfiles:/var/www/html/perfiles
+    networks:
+      - appnet
+
+  backup:
+    build: ./backup
+    container_name: sistema_backup
+    volumes:
+      - ./backup:/backups
+    networks:
+      - appnet
+
+networks:
+  appnet:
