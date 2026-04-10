@@ -1,6 +1,7 @@
 Para poder iniciar los contenedores para la pagina entran a cmd/terminal entrar a C:\Users\Lab5\Desktop\FourTech y colocar estos 2 comandos: docker compose build --no-cache y al terminar la descarga docker compose up
 eso crea y arranca los contenedores, si ya estan creados solo poner docker compose up o en docker desktop entrar a contenedores y buscar el que se llame FourTech.
-Para entrar ponen en google localhost:8080 y deberia funcionar correctamente la pagina, la base de datos se encuentra en el servidor 192.168.5.50, puerto ssh:22 y para ver la base de datos tiene que entrar al putty con esa ip, usuario facundo.figuera y contraseña 56812417, luego adentro ponen mysql -u facundo.figuera -p y colocan devuelta la contraseña, al entrar hacen USE fourtech; y ahi ya estan adentro de la base de datos, para ver las tablas usan SHOW TABLES;
+Para entrar ponen en google localhost:8080 y deberia funcionar correctamente la pagina, la base de datos se encuentra en el servidor 192.168.5.50, puerto ssh:22 y para ver la base de datos tiene que entrar al
+putty con esa ip, usuario facundo.figuera y contraseña 56812417, luego adentro ponen mysql -u facundo.figuera -p y colocan devuelta la contraseña, al entrar hacen USE fourtech; y ahi ya estan adentro de la base de datos, para ver las tablas usan SHOW TABLES;
 
 No es necesario tener el putty y el cmd abierto luego de prender los contenedores, solo docker desktop con los contenedores corriendo.
 
